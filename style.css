@@ -2,8 +2,119 @@
 --white-color: #ffffff;
 --black-color: #000000;
 --dark-grey-color: #484a46;
+--dark-yellow-color:#ffae00;
+--light-yellow-orange-color:#bd9235;
 }
 *{
     margin: 0;
     padding: 0;
+    background-color: var(--black-color);
+}
+button{
+    width: 20%;
+    height: 35px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--dark-yellow-color);
+    background-color: var(--dark-yellow-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.125s ease-in;
+  
+}
+button:hover{
+    background-color: transparent;
+    color: var(--dark-yellow-color);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    align-items: center;
+    color: var(--white-color);
+}
+nav li a{
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.125s ease-in-out;
+}
+nav a:visited{
+    color: var(--dark-yellow-color);
+}
+nav a:hover{
+    background-color: var(--dark-yellow-color);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+nav h3 {
+
+} 
+.Home{
+    padding: 3rem;
+    background-color: var(--black-color);
+}
+.Home .Home-Content {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+.Home .Home-Content .Text{
+    width: 30%;
+}
+.Home .Home-Content .Text p{
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.full{
+    font-size: small;
+
+}
+.Home .Home-Content .Image{
+    width: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    filter: grayscale(25%);
+    cursor: pointer;
+}
+.Home .Home-Content .Image img{
+    width: 50%;
+    height: 60%;
+    border-radius: 5px;
+    transition: color 0.5s ease-in-out;
+}
+.Home .Home-Content .Images:hover{
+    transform: scale(1.1);
+}
+#span{
+    color: var(--dark-yellow-color);
+    font-size: 1.5rem;
+}
+.name{
+    color: var(--dark-yellow-color);
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.Services{
+    padding: 3rem 0;
+}
+.Services > span{
+    display: block;
+    text-align: center;
+    color: var(--white-color);
 }
