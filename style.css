@@ -75,7 +75,7 @@ nav h3 {
     gap: 10rem;
 }
 .Home .Home-Content .Text{
-    width: 30%;
+    padding-left: 1%;
 }
 .Home .Home-Content .Text p{
     color: var(--white-color);
